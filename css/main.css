@@ -1,0 +1,95 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+	color: #fff;
+	margin: 0;
+    background-color: #7b8bb0;
+}
+h1 {
+	font-size: 64px;
+	font-weight: 300;
+	line-height: 64px;
+	margin-bottom: 0;
+}
+h2 {
+   font-size: 16px;
+   font-weight: 300;
+   text-transform: uppercase;
+}
+h3 {
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+p {
+	margin-bottom: 30px;
+	line-height: 30px;
+}
+img {
+	border: 0;
+}
+
+a:link, a:active,a:visited {
+    color: #ddd;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #7b8bb0;
+}
+
+main {
+	width: 70%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer {
+	color: #fff;
+	position: relative;
+	height: 65px;
+	left: 0;
+	bottom: 0;
+	font-size: 14px;
+	background-color: #090f33;
+	width: 100%;
+	padding: 15px;
+}
+
+.button {
+	background-color: #090f33;
+	padding-top: 6px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+nav {
+	text-align: center;
+	margin: 40px;
+}
+
+ul {
+    font-size: 12.5px;
+    line-height: 20px;
+}
+.darkness {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	background-color: #090f33;
+    background-image: url(https://wallpaperaccess.com/full/1686786.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container {
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+	min-width: 320px;
+}
