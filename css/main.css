@@ -2,7 +2,11 @@ body {
     font-family: 'Source Code Pro', monospace;
 	color: #fff;
 	margin: 0;
-    background-color: #7b8bb0;
+    background-color: rgb(32, 32, 32);
+	width: 100%;
+}
+header {	
+	height: 100%;
 }
 h1 {
 	font-size: 64px;
@@ -42,6 +46,7 @@ main {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	align-items: center;
 }
 footer {
 	color: #fff;
@@ -50,13 +55,16 @@ footer {
 	left: 0;
 	bottom: 0;
 	font-size: 14px;
-	background-color: #090f33;
+	background-color: #00000098;
 	width: 100%;
 	padding: 15px;
+	align-items: center;
 }
-
+.social {
+	float: right;
+}
 .button {
-	background-color: #090f33;
+	background-color: #4646467c;
 	padding-top: 6px;
 	padding-right: 12px;
 	padding-bottom: 6px;
@@ -68,7 +76,8 @@ footer {
 }
 nav {
 	text-align: center;
-	margin: 40px;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 ul {
@@ -79,8 +88,8 @@ ul {
 	color: #fff;
 	text-align: center;
 	margin-bottom: 20px;
-	padding-top: 160px;
-	padding-bottom: 160px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: #090f33;
     background-image: url(https://wallpaperaccess.com/full/1686786.jpg);
 	background-position: center center;
@@ -92,4 +101,45 @@ ul {
 	margin-right: auto;
 	margin-left: auto;
 	min-width: 320px;
+}
+.contato{
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background-color: #f1f1f1;
+	padding: 20px;
+	box-shadow: 0 0 5px rgba(117, 0, 0, 0.1);
+}
+.contact-info {
+	font-size: 16px;
+  }
+  .contact-info strong {
+	font-weight: bold;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+li {
+	margin-bottom: 10px;
+}
+.box {
+	margin-bottom: 20px;
+	width: 100%;
+	height: 500px;
+	background-color: rgb(5, 5, 5);
+	opacity: 0;
+	position: relative;
+	animation: fadeSlide 5s ease-in-out forwards;
+ }
+  @keyframes fadeSlide {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-100px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
 }
