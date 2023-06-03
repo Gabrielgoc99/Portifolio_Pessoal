@@ -95,6 +95,9 @@ ul {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	opacity: 0;
+	position: relative;
+	animation: fadeSlide 5s ease-in-out forwards;
 }
 .container {
 	max-width: 1280px;
@@ -124,6 +127,61 @@ ul {
 li {
 	margin-bottom: 10px;
 }
+form {
+	width: 400px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+}
+
+textarea {
+      height: 100px;
+	  margin-top: 20px;
+}
+
+input[type="submit"] {
+      background-color: rgb(5, 5, 5);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+}
+
+input[type="submit"]:hover {
+      background-color: #ff0000;
+}
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+  
+.social-links a {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px 10px;
+	background-color: #ccc;
+	color: #000;
+	text-decoration: none;
+}
+  
+.social-links a:hover {
+	background-color: #ff0000;
+	color: #fff;
+}
 .box {
 	margin-bottom: 20px;
 	width: 100%;
@@ -143,3 +201,118 @@ li {
 	  transform: translateX(0);
 	}
 }
+.dotted-line {
+	border-top: 1px dotted #ffffff;
+	margin: 20px 0;
+  }
+.tec-links{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.tec-links a {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px 10px;
+	background-color: #ccc;
+	color: #000;
+	text-decoration: none;
+}
+.tec-links a:hover {
+	background-color: #ff0000;
+	color: #fff;
+}
+.formacao{
+	font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+}
+.formation {
+	margin-bottom: 20px;
+}
+  
+.degree {
+	font-weight: bold;
+}
+  
+.institution {
+	font-style: italic;
+}
+  
+.year {
+	float: right;
+	color: #999;
+}
+.tlcontainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.tlcontainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #090f33;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.tlleft {
+    left: 0;
+}
+
+/* Place the container to the right */
+.tlright {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.tlleft::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.tlright::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.tlright::after {
+    left: -16px;
+}
+
+/* The actual content */
+.tlcontent {
+    padding: 20px 30px;
+    background-color:rgb(5, 5, 5);
+    position: relative;
+    border-radius: 6px;
+}
+

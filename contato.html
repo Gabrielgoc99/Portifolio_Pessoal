@@ -24,23 +24,36 @@
 
         <main role="main">
             <div class="contato">
-                <h1 align="center">Contato</h1>            
-                <p>Para entrar em contato comigo, utilize as informações abaixo:</p>            
-                <ul class="contact-info">
-                  <li><strong>Email:</strong> gabrielgoc99@gmail.com</li>
-                  <li><strong>Telefone:</strong> (32) 99999-9999</li>
-                  <li><strong>Endereço:</strong> Mariano Procópio, Juiz de Fora-MG</li>
-                </ul>
+                <h2 align="center">Formulário de Contato</h2>
+
+                    <form action="processar_formulario.php" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/gabrielgoc99" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com/gabrielgoc99" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/gabrielgoc99" target="_blank">Instagram</a>
+                  </div>
               </div>              
         </main>
     </div>
 <footer>
     <div class="container">
         <div class="social">
-            <a href="http://www.github.com/gabrielgoc99"><img src="images/github.png" height="36" width="36" alt="github logo"></a>
-            <a href="http://www.linkedin.com/in/gabrielgoc99/"><img src="images/linkedin.png" height="36" width="36" alt="linkedin logo"></a>
-            <a href="http://www.twitter.com/gabrielgoc99"><img src="images/twitter.png" height="36" width="36" alt="twitter"></a>
-        </div>   
+            <a href="http://www.github.com/gabrielgoc99" target="_blank"><img src="images/github.png" height="36" width="36" alt="github logo"></a>
+            <a href="http://www.linkedin.com/in/gabrielgoc99/" target="_blank"><img src="images/linkedin.png" height="36" width="36" alt="linkedin logo"></a>
+            <a href="http://www.twitter.com/gabrielgoc99" target="_blank"><img src="images/twitter.png" height="36" width="36" alt="twitter"></a>
+        </div>  
+    </div> 
 </footer>
 </body>
 </html>
